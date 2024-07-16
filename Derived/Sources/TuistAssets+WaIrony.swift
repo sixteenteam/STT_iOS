@@ -20,7 +20,35 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum WaIronyAsset {
-  public static let accentColor = WaIronyColors(name: "AccentColor")
+  public enum Assets {
+  }
+  public enum GrayScale {
+  public static let gray10 = WaIronyColors(name: "Gray 10")
+    public static let gray20 = WaIronyColors(name: "Gray 20")
+    public static let gray30 = WaIronyColors(name: "Gray 30")
+    public static let gray40 = WaIronyColors(name: "Gray 40")
+    public static let gray50 = WaIronyColors(name: "Gray 50")
+    public static let gray60 = WaIronyColors(name: "Gray 60")
+    public static let gray70 = WaIronyColors(name: "Gray 70")
+    public static let gray80 = WaIronyColors(name: "Gray 80")
+    public static let gray90 = WaIronyColors(name: "Gray 90")
+  }
+  public enum Primary {
+  public static let blue10 = WaIronyColors(name: "Blue 10")
+    public static let blue20 = WaIronyColors(name: "Blue 20")
+    public static let blue30 = WaIronyColors(name: "Blue 30")
+    public static let blue40 = WaIronyColors(name: "Blue 40")
+  }
+  public enum Sub {
+  public static let green10 = WaIronyColors(name: "Green 10")
+    public static let green20 = WaIronyColors(name: "Green 20")
+    public static let red10 = WaIronyColors(name: "Red 10")
+    public static let red20 = WaIronyColors(name: "Red 20")
+    public static let skyBlue10 = WaIronyColors(name: "SkyBlue 10")
+    public static let skyBlue20 = WaIronyColors(name: "SkyBlue 20")
+    public static let yellow10 = WaIronyColors(name: "Yellow 10")
+    public static let yellow20 = WaIronyColors(name: "Yellow 20")
+  }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
@@ -44,10 +72,20 @@ public final class WaIronyColors {
   }()
 
   #if canImport(SwiftUI)
+  private var _swiftUIColor: Any? = nil
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public private(set) lazy var swiftUIColor: SwiftUI.Color = {
-    SwiftUI.Color(asset: self)
-  }()
+  public private(set) var swiftUIColor: SwiftUI.Color {
+    get {
+      if self._swiftUIColor == nil {
+        self._swiftUIColor = SwiftUI.Color(asset: self)
+      }
+
+      return self._swiftUIColor as! SwiftUI.Color
+    }
+    set {
+      self._swiftUIColor = newValue
+    }
+  }
   #endif
 
   fileprivate init(name: String) {
@@ -70,8 +108,8 @@ public extension WaIronyColors.Color {
 }
 
 #if canImport(SwiftUI)
+@available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
 public extension SwiftUI.Color {
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   init(asset: WaIronyColors) {
     let bundle = WaIronyResources.bundle
     self.init(asset.name, bundle: bundle)

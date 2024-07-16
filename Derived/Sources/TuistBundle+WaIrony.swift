@@ -8,19 +8,17 @@ import Foundation
 private class BundleFinder {}
 
 extension Foundation.Bundle {
-    /// Since WaIrony is a application, the bundle for classes within this module can be used directly.
-    static var module: Bundle = {
-        return Bundle(for: BundleFinder.self)
-    }()
+/// Since WaIrony is a application, the bundle for classes within this module can be used directly.
+static let module = Bundle(for: BundleFinder.self)
 }
 
 // MARK: - Objective-C Bundle Accessor
 
 @objc
 public class WaIronyResources: NSObject {
-   @objc public class var bundle: Bundle {
-         return .module
-   }
+@objc public class var bundle: Bundle {
+    return .module
+}
 }
 // swiftlint:enable all
 // swiftformat:enable all

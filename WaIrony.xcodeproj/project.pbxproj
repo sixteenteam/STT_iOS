@@ -3,17 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		099FEF3E3C2EFA34E7E33863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959426F9BF8D1DB587CF825 /* AppDelegate.swift */; };
+		171A37149108518921722F00 /* GrayScale.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E7FD3C3A64B42917F3284 /* GrayScale.xcassets */; };
 		27CF6C2E756A123FF0E50BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44AB69D10FE38BC985AA419D /* Assets.xcassets */; };
+		37BB7AB238BAF1D297981B48 /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4588F94D5ED9AA98883EC4A /* FontStyle.swift */; };
 		3B1C7E27C0C521DA91F62E7C /* TuistAssets+WaIrony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D8F01A0F8DB1D9195ED7EE /* TuistAssets+WaIrony.swift */; };
+		44BBF797A91D2ED1BD5095DD /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0B2C1F3F6C333FF6957DC3C /* Pretendard-Medium.otf */; };
 		493684CDCBC29A58AE83BD35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48996F1C96D48EF2D0DBA99 /* SceneDelegate.swift */; };
+		4A144DCA13B8D49986B92FEA /* Color+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2E6D29F2B5E54D30D4B64F /* Color+init.swift */; };
+		6D981EFB33224A762309159D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB4FE2A0167494B674FCE2F /* ViewController.swift */; };
+		9870358ADB07A3F650AFBC30 /* Primary.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50EFCB50FAD81F47FB14139D /* Primary.xcassets */; };
+		A24C9B5E35EFB7156D135AAA /* TuistFonts+WaIrony.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A446156FD1517543547C102 /* TuistFonts+WaIrony.swift */; };
 		ADA9E59FA7962EF451AC88D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57728E52F67FDB82AE5874E7 /* LaunchScreen.storyboard */; };
+		B7654D21D12403D3B4718948 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC66A5AD51005D3003EF7596 /* Font.swift */; };
+		D18D408EF2F15368177C56FD /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84F25061BDCCC2FBA3346259 /* Pretendard-Bold.otf */; };
+		D7AAC863E366C870BA1920E0 /* Sub.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A084315345D3F0A88035AD6 /* Sub.xcassets */; };
+		EA3F45411A8D84A2F411DFE6 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 946B303760F41AFF459C5B4D /* Pretendard-Regular.otf */; };
 		F7840E003CD6FB04726CEB7F /* TuistBundle+WaIrony.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F9E42CDB7F0D3ECFD62502 /* TuistBundle+WaIrony.swift */; };
-		FE9D1279386650B1C7FEE2DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E41287927B1EB6164DDEBB /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,15 +40,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A446156FD1517543547C102 /* TuistFonts+WaIrony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistFonts+WaIrony.swift"; sourceTree = "<group>"; };
 		37D8F01A0F8DB1D9195ED7EE /* TuistAssets+WaIrony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+WaIrony.swift"; sourceTree = "<group>"; };
 		44AB69D10FE38BC985AA419D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50EFCB50FAD81F47FB14139D /* Primary.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Primary.xcassets; sourceTree = "<group>"; };
 		57728E52F67FDB82AE5874E7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68AD677DDAE3A112F1124D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6C235142A614646415E91B40 /* WaIrony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaIrony.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB4FE2A0167494B674FCE2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84F25061BDCCC2FBA3346259 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		8959426F9BF8D1DB587CF825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2E41287927B1EB6164DDEBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A084315345D3F0A88035AD6 /* Sub.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sub.xcassets; sourceTree = "<group>"; };
+		8E0E7FD3C3A64B42917F3284 /* GrayScale.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GrayScale.xcassets; sourceTree = "<group>"; };
+		946B303760F41AFF459C5B4D /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		BC2E6D29F2B5E54D30D4B64F /* Color+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+init.swift"; sourceTree = "<group>"; };
+		D0B2C1F3F6C333FF6957DC3C /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		D2F9E42CDB7F0D3ECFD62502 /* TuistBundle+WaIrony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+WaIrony.swift"; sourceTree = "<group>"; };
+		DC66A5AD51005D3003EF7596 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		E48996F1C96D48EF2D0DBA99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F4588F94D5ED9AA98883EC4A /* FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +76,18 @@
 			isa = PBXGroup;
 			children = (
 				98BF6168834453B46A99B537 /* App */,
-				B2E41287927B1EB6164DDEBB /* ViewController.swift */,
+				EA0BE7804789FE32A6341126 /* DesignSystem */,
+				C100BD4D3EC4AD1DCDCCEAFA /* Scenes */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		17087AE8CC2E216BB48EAF8D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				885F6978C44A5A6E283C3A50 /* Pretendard */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		2866A569BD281E45571BA833 /* Sources */ = {
@@ -66,6 +95,7 @@
 			children = (
 				37D8F01A0F8DB1D9195ED7EE /* TuistAssets+WaIrony.swift */,
 				D2F9E42CDB7F0D3ECFD62502 /* TuistBundle+WaIrony.swift */,
+				0A446156FD1517543547C102 /* TuistFonts+WaIrony.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -73,10 +103,21 @@
 		37CE5FAC304FA6DAFA08E9E8 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D8D2C04DCB260510563C39B3 /* Colors */,
+				17087AE8CC2E216BB48EAF8D /* Fonts */,
 				44AB69D10FE38BC985AA419D /* Assets.xcassets */,
 				57728E52F67FDB82AE5874E7 /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		3A43A22A58FD3C3F927DE5D2 /* Typography */ = {
+			isa = PBXGroup;
+			children = (
+				DC66A5AD51005D3003EF7596 /* Font.swift */,
+				F4588F94D5ED9AA98883EC4A /* FontStyle.swift */,
+			);
+			path = Typography;
 			sourceTree = "<group>";
 		};
 		712374C29FFEABC7B7A18DE6 /* Support */ = {
@@ -87,11 +128,14 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		8122D476ED7836754A2005F3 /* Frameworks */ = {
+		885F6978C44A5A6E283C3A50 /* Pretendard */ = {
 			isa = PBXGroup;
 			children = (
+				84F25061BDCCC2FBA3346259 /* Pretendard-Bold.otf */,
+				D0B2C1F3F6C333FF6957DC3C /* Pretendard-Medium.otf */,
+				946B303760F41AFF459C5B4D /* Pretendard-Regular.otf */,
 			);
-			name = Frameworks;
+			path = Pretendard;
 			sourceTree = "<group>";
 		};
 		98BF6168834453B46A99B537 /* App */ = {
@@ -130,13 +174,55 @@
 			path = Derived;
 			sourceTree = "<group>";
 		};
+		BE30EF8CDCA31C2E283A235A /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				BC2E6D29F2B5E54D30D4B64F /* Color+init.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		C100BD4D3EC4AD1DCDCCEAFA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6CB4FE2A0167494B674FCE2F /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C6FDCAEBEC6331ABC6E102DB /* Compiled */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Compiled;
+			sourceTree = "<group>";
+		};
 		CEEE3536E0CC62F85B3B7D5F = {
 			isa = PBXGroup;
 			children = (
 				9EB6F0A3525BD48146299E55 /* Project */,
-				8122D476ED7836754A2005F3 /* Frameworks */,
+				C6FDCAEBEC6331ABC6E102DB /* Compiled */,
 				A774A899FF45EEE9B5B7BBD5 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		D8D2C04DCB260510563C39B3 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E7FD3C3A64B42917F3284 /* GrayScale.xcassets */,
+				50EFCB50FAD81F47FB14139D /* Primary.xcassets */,
+				8A084315345D3F0A88035AD6 /* Sub.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		EA0BE7804789FE32A6341126 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				BE30EF8CDCA31C2E283A235A /* Color */,
+				3A43A22A58FD3C3F927DE5D2 /* Typography */,
+			);
+			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,12 +252,13 @@
 		FCD42F1177E978A6AB839C98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				ORGANIZATIONNAME = twinkleSun;
 				TargetAttributes = {
 				};
 			};
 			buildConfigurationList = 98F3BF8F7DB08A276A2ECBC1 /* Build configuration list for PBXProject "WaIrony" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -194,6 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				27CF6C2E756A123FF0E50BC2 /* Assets.xcassets in Resources */,
+				171A37149108518921722F00 /* GrayScale.xcassets in Resources */,
+				9870358ADB07A3F650AFBC30 /* Primary.xcassets in Resources */,
+				D7AAC863E366C870BA1920E0 /* Sub.xcassets in Resources */,
+				D18D408EF2F15368177C56FD /* Pretendard-Bold.otf in Resources */,
+				44BBF797A91D2ED1BD5095DD /* Pretendard-Medium.otf in Resources */,
+				EA3F45411A8D84A2F411DFE6 /* Pretendard-Regular.otf in Resources */,
 				ADA9E59FA7962EF451AC88D4 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,9 +300,13 @@
 			files = (
 				3B1C7E27C0C521DA91F62E7C /* TuistAssets+WaIrony.swift in Sources */,
 				F7840E003CD6FB04726CEB7F /* TuistBundle+WaIrony.swift in Sources */,
+				A24C9B5E35EFB7156D135AAA /* TuistFonts+WaIrony.swift in Sources */,
 				099FEF3E3C2EFA34E7E33863 /* AppDelegate.swift in Sources */,
 				493684CDCBC29A58AE83BD35 /* SceneDelegate.swift in Sources */,
-				FE9D1279386650B1C7FEE2DA /* ViewController.swift in Sources */,
+				4A144DCA13B8D49986B92FEA /* Color+init.swift in Sources */,
+				B7654D21D12403D3B4718948 /* Font.swift in Sources */,
+				37BB7AB238BAF1D297981B48 /* FontStyle.swift in Sources */,
+				6D981EFB33224A762309159D /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +441,8 @@
 				PRODUCT_NAME = WaIrony;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -368,6 +467,8 @@
 				PRODUCT_NAME = WaIrony;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
