@@ -11,6 +11,8 @@ public extension Color.Sub {
     static let red20: Color = WaIronyAsset.Sub.red20.swiftUIColor
     static let green10: Color = WaIronyAsset.Sub.green10.swiftUIColor
     static let green20: Color = WaIronyAsset.Sub.green20.swiftUIColor
-    static let skyBlue10: Color = WaIronyAsset.Sub.skyBlue10.swiftUIColor
-    static let skyBlue20: Color = WaIronyAsset.Sub.skyBlue20.swiftUIColor
+    static let blue10: Color = WaIronyAsset.Sub.skyBlue10.swiftUIColor
+    static let blue20: Color = WaIronyAsset.Sub.skyBlue20.swiftUIColor
+    static let blue30: Color = WaIronyAsset.Sub.skyBlue30.swiftUIColor
+    static let blue40: Color = WaIronyAsset.Sub.skyBlue40.swiftUIColor
 }

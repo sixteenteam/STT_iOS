@@ -2,8 +2,11 @@ import SwiftUI
 import FlowKit
 
 struct InputNameView: View {
-    @State var name: String = ""
     @Flow var flow
+    @State var name: String
+    let userInfo: UserInfo
+    let navigate: () -> Void
+
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             VStack(alignment: .leading, spacing: 24) {
@@ -23,7 +26,7 @@ struct InputNameView: View {
             Spacer()
 
             WaIronyButton(text: "다음") {
-                flow.push(InputBirthView())
+                flow.push(InputBirthView(userInfo: userInfo, navigate: navigate))
             }
             .disabled(name.isEmpty)
         }

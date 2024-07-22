@@ -4,6 +4,9 @@ import FlowKit
 struct InputProfileView: View {
     @State var uiImage: UIImage?
     @Flow var flow
+    let userInfo: UserInfo
+    let birth: Date
+    let navigate: () -> Void
     var body: some View {
         VStack(spacing: 0) {
             VStack(alignment: .leading, spacing: 24) {
@@ -21,18 +24,27 @@ struct InputProfileView: View {
 
             Spacer()
 
-            Group {
+            ZStack {
                 if let uiImage {
                     Image(uiImage: uiImage)
                         .resizable()
                         .frame(width: 150, height: 150)
                 } else {
-                    Image(.defaultProfile)
-                        .resizable()
-                        .frame(width: 150, height: 150)
+                    AsyncImage(url: userInfo.profile) { image in
+                        image.resizable()
+                            .frame(width: 150, height: 150)
+                    } placeholder: {
+                        Image(.defaultProfile)
+                            .resizable()
+                            .frame(width: 150, height: 150)
+                    }
                 }
             }
             .clipShape(Circle())
+            .overlay {
+                Circle()
+                    .stroke(Color.Primary.blue10)
+            }
             .overlay(alignment: .bottomTrailing) {
                 Image(.plus)
                     .resizable()
@@ -48,7 +60,7 @@ struct InputProfileView: View {
             Spacer()
 
             WaIronyButton(text: "다음") {
-                flow.push(AgreementTermsView())
+                flow.push(AgreementTermsView(userInfo: userInfo, birth: birth, navigate: navigate))
             }
         }
         .navigationBar(hasBackButton: true)

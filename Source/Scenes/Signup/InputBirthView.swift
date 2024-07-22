@@ -2,7 +2,12 @@ import SwiftUI
 import FlowKit
 
 struct InputBirthView: View {
-    @State var birth: String = ""
+    var birthString: String {
+        birthDate.toStringFormat("yyyy년 MM월 dd일")
+    }
+    @State var birthDate: Date = .init()
+    let userInfo: UserInfo
+    let navigate: () -> Void
     @Flow var flow
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -16,16 +21,20 @@ struct InputBirthView: View {
                         .waIronyFont(.body2, weight: .regular, color: .black)
                 }
                 
-                WaIronyTextField("ex ) 2024-04-04", text: $birth)
+                WaIronyTextField("ex ) 2024-04-04", text: .constant(birthString))
+                    .disabled(true)
+
+                DatePicker("", selection: $birthDate, displayedComponents: .date)
+                    .datePickerStyle(.wheel)
+                    .frame(maxWidth: .infinity)
             }
             .padding(.horizontal, 24)
 
             Spacer()
 
             WaIronyButton(text: "다음") {
-                flow.push(InputProfileView())
+                flow.push(InputProfileView(userInfo: userInfo, birth: birthDate, navigate: navigate))
             }
-            .disabled(birth.isEmpty)
         }
         .navigationBar(hasBackButton: true)
     }
